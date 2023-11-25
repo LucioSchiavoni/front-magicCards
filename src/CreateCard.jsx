@@ -61,7 +61,7 @@ const [createCardMutation] = useMutation(CREATE_CARD_MUTATION)
              <label htmlFor="" className='text-black'>Puntos</label>
             <input type="text" id='points' className='px-3 py-1 text-black placeholder:italic rounded-md bg-gray-100 ring-2 ring-red-800 focus:outline-none' value={formik.values.points} placeholder='Puntos' onChange={formik.handleChange} required/>
           </div>
-          <button className='px-6 py-1 rounded-md bg-red-800 text-white text-xl' type='submit'>Guardar</button>
+          <button className='px-6 py-1 rounded-lg bg-red-800 text-white text-xl' type='submit'>Guardar</button>
         </form>
     </div>
   )
