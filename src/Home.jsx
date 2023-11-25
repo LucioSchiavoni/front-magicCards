@@ -13,8 +13,8 @@ const Home = () => {
     const [search, setSearch] = useState('')
 
 
-    if(loading) return <div><p className="text-white 2xl text-center">Cargando...</p></div>
-    if(error) return <div><p className="text-white 2xl text-center">{error.message}</p></div>
+    if(loading) return <div><p className="text-white text-3xl text-center">Cargando...</p></div>
+    if(error) return <div><p className="text-white text-2xl text-center">{error.message}</p></div>
 
     const filterCards = cards.filter(card => 
         card.name.toLowerCase().includes(search.toLowerCase()))
