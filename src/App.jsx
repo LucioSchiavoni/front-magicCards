@@ -8,7 +8,7 @@ function App() {
   
 
   const client = new ApolloClient({
-    uri: 'http://localhost:3000/graphql',
+    uri:import.meta.env.VITE_URI,
     cache: new InMemoryCache(),
    
   })
