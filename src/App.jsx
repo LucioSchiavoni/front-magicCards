@@ -3,6 +3,8 @@ import './App.css'
 import Home from './Home'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import CreateCard from './CreateCard'
+import Counter from './Counter'
+
 
 function App() {
   
@@ -18,9 +20,10 @@ function App() {
      <BrowserRouter>
       <ApolloProvider client={client}>
     <Routes>
-       
+     
       <Route path='/' element={<Home/>}/>   
       <Route path='/create' element={<CreateCard/>}/>
+     <Route path='/counter' element={<Counter/>}/>
     </Routes>
    </ApolloProvider>
     
