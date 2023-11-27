@@ -9,7 +9,7 @@ const Counter = () => {
 
   return (
     
-   <div className=' from  w-full text-center  flex rounded-md' >
+   <div className=' mt-16  w-full text-center  flex rounded-md' >
     <div className='text-white font-semibold w-6/12  h-full rounded-l-md bg-[url(https://cdna.artstation.com/p/assets/images/images/050/140/548/large/wild-blue-studios-wild-blue-408053-mtg-preordainedsight-mitchellmalloy-01-lo.jpg?1654145548)]  bg-contain ring-1 ring-black'>
       <div className='backdrop-blur-sm'>
         <p className='font-semibod font-mono text-xl '>Agua </p>
@@ -33,8 +33,8 @@ const Counter = () => {
       
       <button className='text-3xl p-2 bg-red-800  text-white w-full  ' onClick={() => setPlayer2(player2 - 1)}>-</button>
     </div>
- <button className='absolute top-44 px-2 py-1 left-0 bg-yellow-600 text-white  rounded-full ' onClick={() => setPlayer1(player1 - 5)}>-5</button>
-     <button className='absolute top-44 px-2 py-1 right-0 bg-yellow-600 text-white rounded-full' onClick={() => setPlayer2(player2 - 5)}>-5</button>
+ <button className='absolute top-52 px-2 py-1 left-0 bg-yellow-600 text-white  rounded-full ' onClick={() => setPlayer1(player1 - 5)}>-5</button>
+     <button className='absolute top-52 px-2 py-1 right-0 bg-yellow-600 text-white rounded-full' onClick={() => setPlayer2(player2 - 5)}>-5</button>
   </div>
    </div>
    
