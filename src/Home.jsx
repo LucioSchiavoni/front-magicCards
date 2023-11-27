@@ -2,6 +2,7 @@ import { useQuery, gql } from "@apollo/client"
 import { GET_CARDS } from "./graphql/graphql"
 import { useState } from "react";
 import Counter from "./Counter";
+import { Link } from "react-router-dom";
 const Home = () => {
 
 
@@ -22,8 +23,11 @@ const Home = () => {
 
     return (
     <div className="min-h-screen flex justify-center items-center flex-col  ">
-        <Counter/>
-        <Link to="/create" className='bg-red-800 p-2 rounded-md text-white absolute top-16 right-10'>Crear</Link>
+        <div className="mt-8">
+             <Counter/>
+        </div>
+       
+        <Link to="/create" className='bg-red-800 p-2 rounded-md text-white absolute top-0 right-10 text-sm'>Crear</Link>
         <h1 className="mb-2 font-semibold text-3xl text-white">Buscar carta</h1>
         <input type="text" className="bg-white rounded-md px-6 py-1 mb-8 text-black focus:ring-2 focus:ring-red-800 focus:outline-none" placeholder="Nombre de la carta.." 
         value={search}
