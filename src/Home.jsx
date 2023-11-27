@@ -27,11 +27,11 @@ const Home = () => {
     return (
     <div className="min-h-screen flex justify-center items-center flex-col  ">
         
-        <div className=' mt-16  w-full text-center  flex rounded-md' >
+        <div className=' w-full text-center  flex rounded-md' >
     <div className='text-white font-semibold w-6/12  h-full rounded-l-md bg-[url(https://cdna.artstation.com/p/assets/images/images/050/140/548/large/wild-blue-studios-wild-blue-408053-mtg-preordainedsight-mitchellmalloy-01-lo.jpg?1654145548)]  bg-contain ring-1 ring-black'>
       <div className='backdrop-blur-sm'>
-        <p className='font-semibod font-mono text-xl '>Agua </p>
-    <p className=' text-5xl font-bold '>{player1}</p>
+        <p className='font-semibod font-mono text-2xl '>Agua </p>
+    <p className=' text-8xl font-bold '>{player1}</p>
       </div>
       
     <div className='w-full'>
@@ -42,8 +42,8 @@ const Home = () => {
     </div>
   <div className=' ring-2 ring-black bg-[url(https://wallpaper-house.com/data/out/11/wallpaper2you_470370.jpg)] bg-contain text-black w-6/12 rounded-r-md  font-semibold '>
     <div className='backdrop-blur-sm text-white'>
-       <p className='text-xl font-mono font-semibold'>Pantano </p>
-    <p className=' text-5xl font-bold'>{player2}</p>
+       <p className='text-2xl font-mono font-semibold'>Pantano </p>
+    <p className=' text-8xl font-bold'>{player2}</p>
     </div>
      
        <div className=''>
@@ -57,7 +57,7 @@ const Home = () => {
    </div>
       
        
-        <Link to="/create" className='bg-red-800 p-1 rounded-md text-white absolute top-0 right-10 text-sm'>Crear</Link>
+        <Link to="/create" className='bg-red-800 p-1 rounded-md text-white absolute top-80 right-0 text-sm'>Crear</Link>
         <h1 className="mb-2 font-semibold text-3xl text-white">Buscar carta</h1>
         <input type="text" className="bg-white rounded-md px-6 py-1 mb-8 text-black focus:ring-2 focus:ring-red-800 focus:outline-none" placeholder="Nombre de la carta.." 
         value={search}
